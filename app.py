@@ -47,7 +47,7 @@ if __name__ == '__main__':
     'Health',
     'Science & Technology']
 
-    _port = int(os.environ.get('PORT'))
+#     _port = int(os.environ.get('PORT'))
     pre_process = joblib.load('pre_process.pkl')
     clf = joblib.load('model.pkl')
-    app.run(host='0.0.0.0',port=_port)
+    app.run(host='0.0.0.0',port=3000)
