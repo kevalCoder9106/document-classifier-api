@@ -50,5 +50,4 @@ if __name__ == '__main__':
     _port = int(os.environ.get('PORT'))
     pre_process = joblib.load('pre_process.pkl')
     clf = joblib.load('model.pkl')
-    app.run()
-    app.run(host='0.0.0.0:$PORT')
+    app.run(host='0.0.0.0',port=_port)
